@@ -1,0 +1,11 @@
+<div class="card mt-4">
+  <h4 class="card-header">You're logged</h4>
+  <div class="card-body">
+    <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+    <h6>HELLO <strong>{{user.name}}</strong></h6>
+    <ul *ngIf="user.token">
+      <li>Your email: <strong>{{user.email}}</strong></li>
+      <li>Your token: <strong>{{user.token}}</strong></li>
+    </ul>
+  </div>
+</div>
